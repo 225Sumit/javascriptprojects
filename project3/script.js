@@ -42,14 +42,15 @@ document.querySelector(".btn").addEventListener("click", () => {
 function generate(){
   // grab all the keys in the dictionary (authors) and store in an array
   const authors = Object.keys(quotes);
-  console.log(authors);
+//   console.log(authors);
   
   // grab a random key (author) and store it in author
   const author = authors[Math.floor(Math.random() * authors.length)];
-  console.log(author.length);
+  console.log(authors.length);
   
   // grab the value(quote) that belongs to that key
   const quote = quotes[author]
+  console.log(quote);
 
   document.querySelector("#qte").textContent = quote;
   document.querySelector("#aut").textContent = author;
