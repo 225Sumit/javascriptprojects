@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>slider</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image fade" style="display: none;">
+            <img src="img/img (1).jpg" width="100%">
+        </div>
+        <div class="image fade" style="display: none;">
+            <img src="img/img (2).jpg" width="100%">
+        </div>
+        <div class="image fade" style="display: none;">
+            <img src="img/img (3).jpg" width="100%">
+        </div>
+        <div class="image fade" style="display: none;">
+            <img src="img/img (4).jpg" width="100%">
+        </div>
+        <div class="image fade" style="display: none;">
+            <img src="img/img (5).jpg" width="100%">
+        </div>
+        <div class="image fade" style="display: none;">
+            <img src="img/img (6).jpg" width="100%">
+        </div>
+        <a id="prev" onclick="show_slide (-1)"> < </a>
+        <a id="next" onclick="show_slide( 1)"> > </a>  
+       
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
