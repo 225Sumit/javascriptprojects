@@ -12,7 +12,7 @@ async function checkweather(city) {
 //   console.log(data.name);
 //   console.log(Math.round(data.main.temp));
   Cityname.innerHTML = data.name;
-  temp.innerHTML = Math.round(data.main.temp) ;
+  temp.innerHTML = Math.floor(data.main.temp) ;
 }
 
 
