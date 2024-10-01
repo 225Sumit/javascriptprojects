@@ -14,7 +14,8 @@ justify-content: center;
 align-items: center;
 }
 .container{
-border: 2px solid red;
+/* border: 2px solid red; */
+border-radius: 0px 60rem;
 width: 80%;
 height: 80%;
 display: flex;
@@ -40,9 +41,16 @@ background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
 }
 .input{
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 90%;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.dgree{
+    /* background-color: aliceblue; */
+    display: flex;
+}
+#Cityname{
+    text-transform: uppercase;
 }
