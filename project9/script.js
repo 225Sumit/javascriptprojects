@@ -1,37 +1,38 @@
-const userinput=document.getElementById("input")
-// const additem=document.getElementById("additem")
-const cleantext=document.getElementById("eraser")
-const item =document.querySelector("#item")
-const grolist=document.querySelector(".grocerylist")
+const userinput = document.getElementById("input");
+const h2 = document.getElementsByTagName("h2");
+const cleantext = document.getElementById("eraser");
+var item = document.querySelector("#item");
+const grolist = document.querySelector(".grocerylist");
+
+userInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    additem();
+  }
+});
+additem = () => {
+  console.log(userInput.value);
+  const list = document.createElement("h2");
+  list.textContent = "-" + userInput.value;
+
+  list.addEventListener("click", () => {
+    console.log("list");
+  
+    if (list.style.textDecoration != "line-through")
+      list.style.textDecoration = "line-through";
+    else list.style.textDecoration = "none";
+  });
+
+  item.appendChild(list);
+
+  userInput.value = "";
+
+  
+};
 
 
-
-userinput.addEventListener("keydown",function(event){
-    if(event.key=="Enter"){
-        additem();
-        console.log("click");
-        
-    }
-})
-additem = () => { 
-    console.log(userinput.value);
-    
-    const  element=document.createElement("h2")
-    item.innerHTML =`- ` + userinput.value;
-    element.appendChild(item.innerHTML);
-    userinput.value="";
-}
 cleantext.addEventListener("click",function(){
-    
-   
-    
-})
 
-item.addEventListener("click", () => {
-    if(item.style.textDecoration != "line-through")
-      item.style. 
-    else
-      item.style.textDecoration = "none";
-  })
+ item.textContent="";
+})
 
 

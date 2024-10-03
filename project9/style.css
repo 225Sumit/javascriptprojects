@@ -1,10 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 body{
-    background-color: #a74d4d;
+    
     text-align: center;
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
 }
 .container{
     /* border: 10px solid beige; */
@@ -13,6 +15,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 10px solid beige; */
+    border-radius: 40rem 40rem  40rem 40rem;
+    background-color: #2af598;
+    #2af598;
+   
     
     
 }
@@ -20,7 +27,10 @@ body{
     /* border: 10px solid beige; */
     height: 100vh;
     width: 80%;
-    background-color: rgba(240, 248, 255, 0.374);
+    color:   #f9f586 ;
+    box-shadow: 10px 100px 12px 12px rgba(245, 245, 245, 0.461);
+    
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
    
    
 }
@@ -35,23 +45,27 @@ body{
     padding: 2rem;
     
 }
-#input{
+#userInput{
     font-size: 2rem;
     border: 0;
     outline: 0;
     border-radius: 2rem;
     height: 3rem;
     padding: 0.5rem;
+    background-color: rgba(240, 248, 255, 0.744);
+    /* border: 10px solid black; */
     
 }
-#additem{
-    padding: 1rem;
-    text-align: left;
-    margin-left: 6rem;
-    
-}
+
 #item{
-    border: 10px solid black;
-    height: 10rem;
-    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20rem 0px 0px;
+    font-size: 2rem;
+    cursor: pointer;
+    
+    text-align: left;
+    color: rgba(253, 255, 255, 0.808);
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+   
 }
+   
