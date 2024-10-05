@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #999797;
+}
+.container{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.calculater{
+    border: 2px solid black;
+    border-radius: ;
+    width: 90%;
+    height: 90vh;
+    text-align: center;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    background-color: #f0e9e970;
+    box-shadow :4px 2px 8px #474646 ;
+}
+.calculater h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    /* border: 2px solid black;  */
+}
+.calculater p{
+    padding: 1rem;
+    /* border: 2px solid black;  */
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 900;
+}
+#btn1,#btn2{
+    width: 10%;
+    height: 10%;
+    font-size: 2rem;
+    outline: none;
+    border: 0px;
+    border-top-left-radius: 4rem;
+    
+}
+input{
+    width: 80%;
+    height: 10%;
+    border: 0px;
+    outline: none;
+    font-size: 2rem;
+    
+    border-top-right-radius: 4rem;
+}
+#slc{
+    width: 90%;
+    height: 10%;
+    font-size: 1rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+#cal button{
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1rem;
+    margin-top: 2rem;
+    /* margin-left: 50%; */
+    height: 10%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border: 0px;
+    outline: none;
+    
+}
+#totaltip{
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+    
+   width: 50%;
+    height: 10%;
+    /* border: 2px solid red; */
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+@media (max-width: 500px) {
+
+.calculater{
+    height: 70vh;
+}
+.calculater h1{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.calculater p{
+    font-size: 0.8rem;
+}
+#btn1,#btn2{
+    width: 5%;
+    height: 5%;
+    font-size: 1rem;
+}
+input{
+    width: 80%;
+    height: 5%;
+    border: 0px;
+    outline: none;
+    font-size: 0.8rem;
+}
+#slc{
+    width: 90%;
+    height: 7%;
+    font-size: 0.9rem;
+    border: 2px solid black
+    
+}
+
+
+#cal button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+  }
+  #slc:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+  }
+  input:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+  }
+#btn1:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+  }
+  #btn2:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+  }
+
+}
