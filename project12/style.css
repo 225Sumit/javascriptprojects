@@ -78,6 +78,19 @@
     border: 0px;
     box-shadow:  0 0 10px rgb(220, 133, 19);
 }
+#questionadd{
+    /* border: 2px solid green; */
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 30rem 30rem  30rem;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.676);
+    
+}
+#mydiv{
+    color:green;
+}
 
 @media screen and (max-width: 480px) {
     .container{
