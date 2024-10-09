@@ -14,8 +14,10 @@ addbtn.addEventListener("click",function(){
 
  delbtn.addEventListener("click",function(){
     flashcard.style.visibility = "hidden";
+    questionadd.style.display = "none";
     questionInput.value="";
     answerInput.value=" ";
+    window.location.reload();
  })
 
  savebtn.addEventListener("click",function(){
@@ -33,28 +35,33 @@ function savequestion(){
  div.id="mydiv"
  div.style.width="20rem";
  div.style.height="20rem";
- div.style.background="green";
-//  div.style.marginLeft="1rem";
- div.style.marginTop="1rem";
-//  div.style.display="flex";
-//  div.style.flexDirection="row";
-//  div.style.justifyContent="center";
+ div.style.background="rgba(220, 133, 19, 0.395)";
+ div.style.boxShadow="inset 0 0 10px rgb(220, 133, 19)";
 
- var h1=document.createElement("h1")
+ div.style.marginTop="1rem";
+
+
+ var head=document.createElement("h1")
  var para=document.createElement("p")
- h1.textContent=questionInput.value;
+ head.textContent=questionInput.value;
  para.textContent=answerInput.value;
  para.style.color="white";
+ para.style.marginTop="5rem";
  para.style.fontSize="2rem";
- div.appendChild(h1)
+ head.style.fontSize="2rem";
+ head.style.color="black"
+ div.appendChild(head)
  div.appendChild(para)
  
+console.log(div);
 
  questionadd.appendChild(div);
- questionadd.appendChild(div)
+ questionadd.appendChild(div);
  questionInput.value="";
  answerInput.value="";
 
+ questionadd.style.visibility = "visible";
+ questionadd.style.display = "grid";
 
 }
 
@@ -62,7 +69,8 @@ function savequestion(){
 
  closebtn.addEventListener("click",function(){
     console.log("click close");
-    questionadd.style.visibility = "hidden";
-    
+
+    questionadd.style.display = "none";
+   
     
  })
