@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ae4d4d81;
+}
+
+.container{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo{
+    padding: 2rem 0;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 2rem;
+}
+#todologo{
+    color: #5a1717;
+    padding: 1rem ;
+}
+.btn{
+    
+    
+    display: flex;
+    
+}
+.btn button,input{
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin: 0rem;
+    /* border-radius: 2rem 0rem; */
+    border: 0px;
+    outline: none;
+}
+input{
+    width: 100%
+}
