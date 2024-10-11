@@ -28,5 +28,6 @@ function makediv(){
     par.textContent=input.value;
     div.appendChild(par)
     main.appendChild(div)
+    console.log(div)
 
 }
